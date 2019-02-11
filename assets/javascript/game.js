@@ -12,7 +12,8 @@ var answers = ["365 Days", "24 Hours"];
 //the mouse click should add the first item within the clues array (defined at the top of this page) to the clueParagraph div
 //and the addClue function should also add the corresponding answer to the answer area under the game keypad - I don't know how to achieve this step.
 function addClue() {
-    document.getElementsByClassName ("clueParagraph").innerHTML = "clues [0]";
+    //document.getElementsByClassName ("clueParagraph")[0].innerHTML = Clues [0];
+    document.getElementsByClassName ("clueParagraph")[0].innerHTML = "Say goodbye every year";
     console.log(addClue);
 }
 
@@ -23,8 +24,11 @@ function addClue() {
 
 //this function is defined in HTML as changeColor within the specific letter classes and is triggered by the mouse click
 //the mouse click should change the color of the letter selected (mouse clicked) from white to crimson
+
+//document.getElementsByClassName ("letter").onclick = function() {changeColor()};
+
 function changeColor() {
-    document.getElementsByClassName ("letter").style.color = "crimson";
+    document.getElementsByClassName ("letter") [0].style.color = "crimson";
 }
 
 //the next statement alerts the player of a wrong guess
