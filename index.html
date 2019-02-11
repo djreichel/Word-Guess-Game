@@ -4,7 +4,7 @@
 
 <Head>
     <title>Guessing Game</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -37,107 +37,115 @@
                 <hr>
 
                     <div class="row"><!--choices row 1-->
-                        <div class="col-md-12" align-content="center">
+                        <div class="col-md-12">
                             <div class="yourChoice"><strong>CLICK YOUR CHOICE:</strong></div>
-                                <div class="letterChoices">
-                                    <div class="letterBox"><div class="A" onclick="changeColor()">A</div></div>
-                                    <div class="letterBox"><div class="G" onclick="changeColor()">G</div></div>
-                                    <div class="letterBox"><div class="V" onclick="changeColor()">V</div></div>
-                                    <div class="letterBox"><div class="N" onclick="changeColor()">N</div></div>
-                                    <div class="letterBox"><div class="n2" onclick="changeColor()">2</div></div>
-                                    <div class="letterBox"><div class="C" onclick="changeColor()">C</div></div>
-                                </div>
                         </div>
+                        <!--I added a "change cursor to pointer" rule in my css doc for all areas the player can click on, but that isn't working-->
+                                <!--<div class="row">-->
+                                    <!--<div class="letterChoices">-->
+                                        <div class="col-2"><div class="letterBox"><div class="A letter" onclick="changeColor()">A</div></div></div>
+                                        <div class="col-2"><div class="letterBox"><div class="G letter" onclick="changeColor()">G</div></div></div>
+                                        <div class="col-2"><div class="letterBox"><div class="V letter" onclick="changeColor()">V</div></div></div>
+                                        <div class="col-2"><div class="letterBox"><div class="N letter" onclick="changeColor()">N</div></div></div>
+                                        <div class="col-2"><div class="letterBox"><div class="n2 letter" onclick="changeColor()">2</div></div></div>
+                                        <div class="col-2"><div class="letterBox"><div class="C letter" onclick="changeColor()">C</div></div></div>
+                                    <!--</div>-->
+                                <!--</div>-->
+                        <!--</div>-->
                     </div>
 
                     <div class="row"><!--choices row 2-->
-                        <div class="col-md-12">
-                            <div class="letterChoices">
-                                    <div class="letterBox"><div class="R" onclick="changeColor()">R</div></div>
-                                    <div class="letterBox"><div class="n1" onclick="changeColor()">1</div></div>
-                                    <div class="letterBox"><div class="B" onclick="changeColor()">B</div></div>
-                                    <div class="letterBox"><div class="T" onclick="changeColor()">T</div></div>
-                                    <div class="letterBox"><div class="K" onclick="changeColor()">K</div></div>
-                                    <div class="letterBox"><div class="n8" onclick="changeColor()">8</div></div>
-                                    </div>
-                        </div>
+                        <!--<div class="col-md-12">-->
+                                <!--<div class="letterChoices">-->
+                                    <div class="col-2"><div class="letterBox"><div class="R letter" onclick="changeColor()">R</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="n1 letter" onclick="changeColor()">1</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="B letter" onclick="changeColor()">B</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="T letter" onclick="changeColor()">T</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="K letter" onclick="changeColor()">K</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="n8 letter" onclick="changeColor()">8</div></div></div>
+                                <!--</div>-->
+                        <!--</div>-->
                     </div>
 
                     <div class="row"><!--choices row 3-->
-                        <div class="col-md-12">
-                            <div class="letterChoices">
-                                    <div class="letterBox"><div class="E" onclick="changeColor()">E</div></div>
-                                    <div class="letterBox"><div class="n9" onclick="changeColor()">9</div></div>
-                                    <div class="letterBox"><div class="O" onclick="changeColor()">O</div></div>
-                                    <div class="letterBox"><div class="n5" onclick="changeColor()">5</div></div>
-                                    <div class="letterBox"><div class="Y" onclick="changeColor()">Y</div></div>
-                                    <div class="letterBox"><div class="Q" onclick="changeColor()">Q</div></div>
-                            </div>
-                        </div>
+                        <!--<div class="col-md-12">-->
+                                <!--<div class="letterChoices">-->
+                                    <div class="col-2"><div class="letterBox"><div class="E letter" onclick="changeColor()">E</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="n9 letter" onclick="changeColor()">9</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="O letter" onclick="changeColor()">O</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="n5 letter" onclick="changeColor()">5</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="Y letter" onclick="changeColor()">Y</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="Q letter" onclick="changeColor()">Q</div></div></div>
+                                <!--</div>-->
+                        <!--</div>-->
                     </div>
 
                     <div class="row"><!--choices row 4-->
-                        <div class="col-md-12">
-                            <div class="letterChoices">
-                                    <div class="letterBox"><div class="n4" onclick="changeColor()">4</div></div>
-                                    <div class="letterBox"><div class="P" onclick="changeColor()">P</div></div>
-                                    <div class="letterBox"><div class="M" onclick="changeColor()">M</div></div>
-                                    <div class="letterBox"><div class="Z" onclick="changeColor()">Z</div></div>
-                                    <div class="letterBox"><div class="F" onclick="changeColor()">F</div></div>
-                                    <div class="letterBox"><div class="n6" onclick="changeColor()">6</div></div>
-                            </div>
-                        </div>
+                        <!--<div class="col-md-12">-->
+                                <!--<div class="letterChoices">-->
+                                    <div class="col-2"><div class="letterBox"><div class="n4 letter" onclick="changeColor()">4</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="P letter" onclick="changeColor()">P</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="M letter" onclick="changeColor()">M</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="Z letter" onclick="changeColor()">Z</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="F letter" onclick="changeColor()">F</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="n6 letter" onclick="changeColor()">6</div></div></div>
+                                <!--</div>-->
+                        <!--</div>-->
                     </div>
 
                     <div class="row"><!--choices row 5-->
-                        <div class="col-md-12">
-                            <div class="letterChoices">
-                                    <div class="letterBox"><div class="J" onclick="changeColor()">J</div></div>
-                                    <div class="letterBox"><div class="D" onclick="changeColor()">D</div></div>
-                                    <div class="letterBox"><div class="U" onclick="changeColor()">U</div></div>
-                                    <div class="letterBox"><div class="n3" onclick="changeColor()">3</div></div>
-                                    <div class="letterBox"><div class="H" onclick="changeColor()">H</div></div>
-                                    <div class="letterBox"><div class="X" onclick="changeColor()">X</div></div>
-                            </div>
-                        </div>
+                        <!--<div class="col-md-12">-->
+                                <!--<div class="letterChoices">-->
+                                    <div class="col-2"><div class="letterBox"><div class="J letter" onclick="changeColor()">J</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="D letter" onclick="changeColor()">D</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="U letter" onclick="changeColor()">U</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="n3 letter" onclick="changeColor()">3</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="H letter" onclick="changeColor()">H</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="X letter" onclick="changeColor()">X</div></div></div>
+                                <!--</div>-->
+                        <!--</div>-->
                     </div>
 
                     <div class="row"><!--choices row 6-->
-                        <div class="col-md-12">
-                            <div class="letterChoices">
-                                    <div class="letterBox"><div class="S" onclick="changeColor()">S</div></div>
-                                    <div class="letterBox"><div class="n7" onclick="changeColor()">7</div></div>
-                                    <div class="letterBox"><div class="I" onclick="changeColor()">I</div></div>
-                                    <div class="letterBox"><div class="W" onclick="changeColor()">W</div></div>
-                                    <div class="letterBox"><div class="n0" onclick="changeColor()">0</div></div>
-                                    <div class="letterBox"><div class="L" onclick="changeColor()">L</div></div>
-                            </div>
-                        </div>
+                        <!--<div class="col-md-12">-->
+                                <!--<div class="letterChoices">-->
+                                    <div class="col-2"><div class="letterBox"><div class="S letter" onclick="changeColor()">S</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="n7 letter" onclick="changeColor()">7</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="I letter" onclick="changeColor()">I</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="W letter" onclick="changeColor()">W</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="n0 letter" onclick="changeColor()">0</div></div></div>
+                                    <div class="col-2"><div class="letterBox"><div class="L letter" onclick="changeColor()">L</div></div></div>
+                                <!--</div>-->
+                        <!--</div>-->
                     </div>
 
                     <div class="row">
                         <div class="col-md-12">
                                     <div class="acknowledgment"><strong>&nbsp;</strong></div>
-                                            <div class="acknowledgmentParagraph">&nbsp;</div>
+                                    <div class="acknowledgmentParagraph">&nbsp;</div>
                         </div>
                     </div>
 
                 <hr>
-    
+
                     <div class="row">
                         <div class="col-md-12">
                             <div class="yourAnswer"><strong>YOUR ANSWER:</strong></div>
-                                <div class="answerChoices">
-                                    <div class="answerBox"><div class="n3" onclick="changeColor()">3</div></div>
-                                    <div class="answerBox"><div class="n6" onclick="changeColor()">6</div></div>
-                                    <div class="answerBox"><div class="n5" onclick="changeColor()">5</div></div>
-                                    <div class="answerBox"><!--<div class="letterBlank"></div>--></div>
-                                    <div class="answerBox"><div class="D" onclick="changeColor()">D</div></div>
-                                    <div class="answerBox"><div class="A" onclick="changeColor()">A</div></div>
-                                    <div class="answerBox"><div class="Y" onclick="changeColor()">Y</div></div>
-                                    <div class="answerBox"><div class="S" onclick="changeColor()">S</div></div>
-                                </div>
                         </div>
+                                <!--<div class="answerChoices">-->
+                                    <div class="col-1"></div>
+                                    <div class="col-1"></div>
+                                    <div class="col-1"><div class="answerBox"><div class="n3 letter" onclick="changeColor()">3</div></div></div>
+                                    <div class="col-1"><div class="answerBox"><div class="n6 letter" onclick="changeColor()">6</div></div></div>
+                                    <div class="col-1"><div class="answerBox"><div class="n5 letter" onclick="changeColor()">5</div></div></div>
+                                    <div class="col-1"></div>
+                                    <div class="col-1"><div class="answerBox"><div class="D letter" onclick="changeColor()">D</div></div></div>
+                                    <div class="col-1"><div class="answerBox"><div class="A letter" onclick="changeColor()">A</div></div></div>
+                                    <div class="col-1"><div class="answerBox"><div class="Y letter" onclick="changeColor()">Y</div></div></div>
+                                    <div class="col-1"><div class="answerBox"><div class="S letter" onclick="changeColor()">S</div></div></div>
+                                    <div class="col-1"></div>
+                                    <div class="col-1"></div>
+                                <!--</div>-->
                     </div>
 
                     <div class="row">

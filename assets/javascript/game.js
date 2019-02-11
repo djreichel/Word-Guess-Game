@@ -5,48 +5,53 @@
 var clues = ["Say goodbye every year", "Keeps your clock busy"];
 var answers = ["365 Days", "24 Hours"];
 
+//I would like to have more clues and answers in my variables.
+//I think I would need a for loop for both variables with a specific index to force the addClue function to stop at a specific clue
+
 //this function is defined in HTML as addClue within the getClue class and is triggered by the mouse click
 //the mouse click should add the first item within the clues array (defined at the top of this page) to the clueParagraph div
+//and the addClue function should also add the corresponding answer to the answer area under the game keypad - I don't know how to achieve this step.
 function addClue() {
-    document.getElementByClassName ("clueParagraph").innerHTML = "clues [0]";
+    document.getElementsByClassName ("clueParagraph").innerHTML = "clues [0]";
+    console.log(addClue);
 }
+
+//function getAnswers() {
+//    document.getElementsByClassName ("clueParagraph").innerHTML = "answers [0]";
+//    console.log(getAnswers);
+//}
 
 //this function is defined in HTML as changeColor within the specific letter classes and is triggered by the mouse click
 //the mouse click should change the color of the letter selected (mouse clicked) from white to crimson
 function changeColor() {
-    document.getElementByClassName ("A" || "B" || "C" || "D" || "E" || "F" || "G" || "H" || "I" || "J" || "K" || "L" 
-    || "M" || "N" || "O" || "P" || "Q" || "R" || "S" || "T" || "U" || "V" || "W" || "X" || "Y" || "Z" || "1" || "2" 
-    || "3" || "4" || "5" || "6" || "7" || "8" | "9" | "0").style.color = "crimson";
+    document.getElementsByClassName ("letter").style.color = "crimson";
 }
 
-//the next two if statements alert the player of a wrong guess and to choose another letter
-//1. the first if statement adds the phrase NOPE!!! :-( to the acknowledgment div
+//the next statement alerts the player of a wrong guess
+//this if statement adds the phrase NOPE!!! :-( to the acknowledgment div
 if (changeColor == "B" || "C" || "E" || "F" || "G" || "H" || "I" || "J" || "K" || "L" || "M" || "N" || "O" || "P" 
     || "Q" || "R" || "T" || "U" || "V" || "W" || "X" || "Z" || "1" || "2" || "4"|| "7" || "8" | "9" | "0"); {
-    document.getElementByClassName ("acknowledgment").innerHTML = "NOPE!!! :-(";
-}
-//2. the second if statement adds the phrase Choose again to the acknowledgmentParagraph div
-if (changeColor == "B" || "C" || "E" || "F" || "G" || "H" || "I" || "J" || "K" || "L" || "M" || "N" || "O" || "P" 
-    || "Q" || "R" || "T" || "U" || "V" || "W" || "X" || "Z" || "1" || "2" || "4"|| "7" || "8" | "9" | "0"); {
-    document.getElementByClassName ("acknowledgmentParagraph").innerHTML = "Choose again";
+    document.getElementsByClassName ("acknowledgment").innerHTML = "NOPE!!! :-(";
 }
 
-//the next two if statements alert the player of a right guess and to choose another letter
-//1. the first if statement adds the phrase YEP!!! :-) to the acknowledgment div
+//the next statement alerts the player of a right guess
+//this if statement adds the phrase YEP!!! :-) to the acknowledgment div
 if (changeColor == "3" || "6" || "5" || "D" || "A" || "Y" || "S"); {
-    document.getElementByClassName ("acknowledgment").innerHTML = "YEP!!! :-(";
+    document.getElementsByClassName ("acknowledgment").innerHTML = "YEP!!! :-(";
 }
-//2. the second if statement adds the phrase Choose again to the acknowledgmentParagraph div
-if (changeColor == "3" || "6" || "5" || "D" || "A" || "Y" || "S"); {
-    document.getElementByClassName ("acknowledgment").innerHTML = "Choose again";
+
+//the next statement prompts the player to choose another letter or number
+//this if statement adds the phrase Choose again to the acknowledgmentParagraph div
+if (changeColor == "letter"); {
+    document.getElementsByClassName ("acknowledgmentParagraph").innerHTML = "Choose again";
 }
 
 //the next two if statements alert the player that he or she won and should play again
 //1. the first if statement adds the phrase YOU WON!!! :-) to the youWon div
 if (changeColor == "3" && "6" && "5" && "D" && "A" && "Y" && "S") {
-    document.getElementByClassName ("youWon").innerHTML = "YOU WON!!! :-)";
+    document.getElementsByClassName ("youWon").innerHTML = "YOU WON!!! :-)";
 }
-//2. the second if statement adds the phrase Click for clue again to the youWonParagraph div to prompt the player to play again
+//2. the second if statement adds the phrase Play again to the youWonParagraph div to prompt the player to play another game
 if (changeColor == "3" && "6" && "5" && "D" && "A" && "Y" && "S") {
-    document.getElementByClassName ("youWonParagraph").innerHTML = "Click for clue again";
+    document.getElementsByClassName ("youWonParagraph").innerHTML = "Play again";
 }
